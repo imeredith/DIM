@@ -79,6 +79,10 @@ const destiny2Links = [
     state: 'destiny2.loadoutbuilder',
     text: 'LB.LB', // t('LB.LB')
     hotkey: 'b'
+  },
+  {
+    state: 'destiny2.setsmanager',
+    text: 'Sets'
   }
 ];
 

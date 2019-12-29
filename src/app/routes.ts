@@ -11,6 +11,7 @@ import { states as collectionsStates } from './collections/routes';
 import { states as organizerStates } from './organizer/routes';
 import { states as settingsStates } from './settings/routes';
 import { states as shellStates } from './shell/routes';
+import { states as setsStates } from './sets-manager/routes';
 
 export const states: ReactStateDeclaration[] = [
   defaultAccountRoute,
@@ -25,6 +26,7 @@ export const states: ReactStateDeclaration[] = [
   ...organizerStates,
   ...settingsStates,
   ...shellStates,
+  ...setsStates,
   // Only include developer stuff in the bundle in dev
   // tslint:disable-next-line:no-require-imports
   ...($DIM_FLAVOR === 'dev' ? require('./developer/routes').states : [])
